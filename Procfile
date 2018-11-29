@@ -1,1 +1,0 @@
-web: npm start --prefix ./app/server && npm start --prefix ./app/client
