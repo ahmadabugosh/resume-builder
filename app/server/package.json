@@ -9,7 +9,7 @@
   },
   "homepage": "https://github.com/saadq/resumake",
   "scripts": {
-    "start": "node index.js --exec babel-node",
+    "start": "babel-node index.js",
     "build": "babel src -d lib --copy-files",
     "lint": "blyss | snazzy",
     "fix": "blyss --fix",
