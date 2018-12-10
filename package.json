@@ -16,7 +16,7 @@
     "test": "npm run test:client && npm run test:server",
     "dist": "cd app/client && npm run build",
     "build:client": "cd app/client && npm install",
-    "start:client": "cd app/client && npm start",
+    "start:client": "cd app/client && npm build",
     "lint:client": "cd app/client && npm run lint",
     "fix:client": "cd app/client && npm run fix",
     "format:client": "cd app/client && npm run format",
