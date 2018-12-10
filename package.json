@@ -26,8 +26,7 @@
     "fix:server": "cd app/server && npm run fix",
     "format:server": "cd app/server && npm run format",
     "lint:server": "cd app/server && npm run lint",
-    "test:server": "cd app/server && npm test",
-    "postinstall": "npm install --prefix ./app/server && npm install --prefix ./app/client"
+    "test:server": "cd app/server && npm test"
   },
   "license": "MIT",
   "devDependencies": {
