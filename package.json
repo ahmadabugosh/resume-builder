@@ -16,18 +16,19 @@
     "test": "npm run test:client && npm run test:server",
     "dist": "cd app/client && npm run build",
     "build:client": "cd app/client && npm install",
-    "start:client": "cd app/client && npm run-script build",
+    "start:client": "cd app/client && npm start",
     "lint:client": "cd app/client && npm run lint",
     "fix:client": "cd app/client && npm run fix",
     "format:client": "cd app/client && npm run format",
     "test:client": "cd app/client && npm test",
-    "build:server": "cd app/server && npm install",
+    "build-server": "babel -d ./build ./app/server -s",
+    "start-server": "node ./build/index.js",
     "start:server": "cd app/server && npm run start",
     "fix:server": "cd app/server && npm run fix",
     "format:server": "cd app/server && npm run format",
     "lint:server": "cd app/server && npm run lint",
     "test:server": "cd app/server && npm test",
-    "postinstall": "npm install --prefix app/server && npm install --prefix app/client"
+    "postinstall": "npm install --prefix ./app/server && npm install --prefix ./app/client"
   },
   "license": "MIT",
   "devDependencies": {
