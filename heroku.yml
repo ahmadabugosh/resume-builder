@@ -5,7 +5,7 @@ build:
   languages:
     - nodejs
     - 'git://github.com/holiture/heroku-buildpack-tex.git'
-    packages:
+  packages:
     - texlive-latex-base
     - texlive-fonts-recommended
     - texlive-fonts-extra
