@@ -1,0 +1,14 @@
+setup:
+  config:
+    BUILDPACK_URL: 'git://github.com/ddollar/heroku-buildpack-multi.git'
+build:
+  languages:
+    - nodejs
+    - 'git://github.com/holiture/heroku-buildpack-tex.git'
+    packages:
+    - texlive-latex-base
+    - texlive-fonts-recommended
+    - texlive-fonts-extra
+    - texlive-latex-extra
+run:
+  web: npm start
